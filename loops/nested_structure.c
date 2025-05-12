@@ -1,16 +1,21 @@
-#include <stdio.h>
-struct Date {
-    int day, month, year;
-};
-struct Employee {
-    int emp_id;
-    char name[50];
-    struct Date dob; // Nested Structure
-};
-int main() {
-    struct Employee e = {1001, "Priya", {15, 8, 1990}};
-    printf("Employee ID: %d\n", e.emp_id);
-    printf("Name: %s\n", e.name);
-    printf("DOB: %02d/%02d/%04d\n", e.dob.day, e.dob.month, e.dob.year);
-    return 0;
+#include<stdio.h>
+struct student
+{
+    
+    int id;
+    double d;
+}s1;
+struct address
+{
+    
+    char*city;
+    struct student stu;
+}s2;
+void main(){
+    s2.stu.id=12;
+    s2.stu.d=22.2;
+    printf("\n%d",s2.stu.id);
+    printf("\n%lf",s2.stu.d);
+    s2.city="test";
+    printf("\n%s",s2.city);
 }
