@@ -52,26 +52,55 @@
 //     }
 // }
 
-#include<stdio.h>
-#include<string.h>
-int main()
-{
-    char pin[]="1234";
-    char n[10];
-    while (1)
+// #include<stdio.h>
+// #include<string.h>
+// int main()
+// {
+//     char pin[]="1234";
+//     char n[10];
+//     while (1)
+//     {
+//         printf("enter pin");
+//         scanf("%s", n);
+//         int cmp = strcmp(pin,n);
+//         if (cmp == 0)
+//         {
+//             printf("\npin is valid\n");
+//             break;
+//         }
+//         else
+//         {
+//             printf("pin is invalid\n");
+//         }
+//     }
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// #include<string.h>
+// void main()
+// {
+//     char name[50];
+//     printf("enter your name:");
+//     gets(name);
+//     printf("name is : %s",name);
+// }
+
+
+#include <stdio.h>
+#include <string.h>
+int main() 
     {
-        printf("enter pin");
-        scanf("%s", n);
-        int cmp = strcmp(pin,n);
-        if (cmp == 0)
-        {
-            printf("\npin is valid\n");
-            break;
-        }
-        else
-        {
-            printf("pin is invalid\n");
-        }
+    char str[] = "Hello, world!";
+    char *ptr = strchr(str, 'o');
+    if (ptr != NULL)
+    {
+        printf("First occurrence of 'o' is at position: %ld\n", ptr - str);
+    }
+    else
+    {
+        printf("Character not found.\n");
     }
     return 0;
 }
