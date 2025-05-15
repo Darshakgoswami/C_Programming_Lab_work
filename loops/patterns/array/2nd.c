@@ -14,7 +14,7 @@ void main()
         {
             printf("\nelements is [%d][%d] :",i,j);
             scanf("%d",&arr[i][j]);
-        }
+        }        
     }
     for(i=0;i<a;i++)
     {
